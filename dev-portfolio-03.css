@@ -307,13 +307,12 @@ a {
 
 .work-grid {
   display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 15px;
-  margin: 0;
+  margin: 0 auto;
   width: 100%;
+  max-width: 1120px;
 }
-.grid-4 { grid-template-columns: repeat(4, 1fr); max-width: 1040px; }
-.grid-3 { grid-template-columns: repeat(3, 1fr); max-width: 780px; }
-.grid-2 { grid-template-columns: repeat(2, 1fr); max-width: 520px; }
 
 .work-card {
   background: var(--panel);
