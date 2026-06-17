@@ -1,436 +1,618 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Natthawut T. - Developer</title>
-  <link rel="stylesheet" href="dev-portfolio-03.css" />
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Natthawut T. - Developer</title>
+    <link rel="stylesheet" href="dev-portfolio-03.css" />
+  </head>
 
-<body data-theme="light">
-  <div class="page">
-    <nav class="nav">
-      <div class="brand">ntwlabs.com</div>
-      <div class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <div class="nav-icons">
-        <button class="theme-toggle" type="button" aria-label="Toggle theme">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M12 3a9 9 0 1 0 9 9h-9z" />
-            <path d="M12 3a9 9 0 0 1 0 18V3z" />
-          </svg>
-        </button>
-        <!-- <a class="icon-btn" href="https://github.com/jimjaja" target="_blank" aria-label="GitHub">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path
-              d="M12 2a10 10 0 0 0-3.16 19.49c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.19-3.37-1.19-.45-1.17-1.1-1.48-1.1-1.48-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.9 1.56 2.37 1.1 2.95.85.1-.67.35-1.1.64-1.36-2.22-.25-4.56-1.12-4.56-5a3.9 3.9 0 0 1 1.03-2.7 3.6 3.6 0 0 1 .1-2.66s.85-.27 2.8 1.03a9.6 9.6 0 0 1 5.1 0c1.95-1.3 2.8-1.03 2.8-1.03.38.9.36 2 .1 2.66a3.9 3.9 0 0 1 1.03 2.7c0 3.9-2.35 4.75-4.58 5 .36.31.69.92.69 1.85v2.75c0 .26.18.59.69.48A10 10 0 0 0 12 2z" />
-          </svg>
-        </a> -->
-      </div>
-    </nav>
-
-    <section class="hero" id="home">
-      <div>
-        <div class="muted">Hi👋</div>
-        <h2>Natthawut Tangkulanuphan</h2>
-        <h6>(Jimmy)</h6>
-        <p class="hero-subtitle">Supply Chain Analyst & Full-Stack Solutions Developer</p>
-        <p>
-          ยกระดับประสิทธิภาพด้าน Supply Chain (Supply Chain Performance) ด้วยระบบเทคโนโลยีที่ออกแบบเฉพาะ (Customized
-          Systems) และระบบ Automation เพื่อสนับสนุนการตัดสินใจบนพื้นฐานข้อมูล (Data-Driven Decision Making)
-        </p>
-        <a class="btn" href="#contact">Contact Me</a>
-      </div>
-      <div class="portrait-card">
-        <img class="portrait" src="images/profile.jpg" alt="Natthawut (Jimmy) - Profile Picture"
-          oncontextmenu="return false;" draggable="false" />
-      </div>
-    </section>
-
-    <section class="section" id="about">
-      <h2 class="section-title">About Me</h2>
-      <div class="divider"></div>
-      <p class="about-text">
-        จบการศึกษาด้าน Computer Science และมีความสนใจในด้าน Supply Chain Management (SCM)
-        ผมเป็นผู้ที่มีความกระตือรือร้น (Self-driven) และสามารถเชื่อมโยงระหว่าง Data Logic กับการดำเนินงานด้าน Supply
-        Chain ได้อย่างมีประสิทธิภาพ โดยผสานความถนัดด้านตัวเลขเข้ากับทักษะ Full-Stack Development และ Automation
-        เพื่อพัฒนาโซลูชันที่ช่วยเปลี่ยนงาน Manual ให้เป็นกระบวนการที่มีประสิทธิภาพและมีความแม่นยำสูง (High-Accuracy
-        Workflows) ผมเป็นผู้เรียนรู้เร็ว (Fast Learner) และมุ่งมั่นเติบโตในสายงาน SCM ในระยะยาว พร้อมตั้งเป้าใช้
-        Advanced Analytics และเทคโนโลยี</p>
-    </section>
-
-    <section class="section" id="skills">
-      <h2 class="section-title">Technical Skills</h2>
-      <div class="divider"></div>
-      <div class="skills">
-        <div class="skill">
-          <h4>Core Tech</h4>
-          <span>Node.js (Express)</span>, <span>React + Vite</span>, <span>Prisma ORM</span>, <span>PostgreSQL</span>,
-          <span>Python</span>, <span>SQL</span>
+  <body data-theme="light">
+    <div class="page">
+      <nav class="nav">
+        <div class="brand">ntwlabs.com</div>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
         </div>
-        <div class="skill">
-          <h4>Supply Chain & Data</h4>
-          <span>Planning for demand</span>, <span>Auto-ordering systems</span>, <span>Managing product lists
-            (SKUs)</span>, <span>Advanced Excel</span>,
-          <span>Data Visualization</span>, <span>Inventory Optimization</span>
+        <div class="nav-icons">
+          <button class="theme-toggle" type="button" aria-label="Toggle theme">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3a9 9 0 1 0 9 9h-9z" />
+              <path d="M12 3a9 9 0 0 1 0 18V3z" />
+            </svg>
+          </button>
         </div>
-        <div class="skill">
-          <h4>Modern Workflow</h4>
-          <span>Using AI-powered IDEs to write code faster</span>, <span>Prompt engineering for technical
-            solutions</span>
+      </nav>
+
+      <section class="hero" id="home">
+        <div>
+          <div class="muted">Hi👋</div>
+          <h2>Natthawut Tangkulanuphan</h2>
+          <h6>(Jimmy)</h6>
+          <p class="hero-subtitle">Demand Planner & Supply Chain Automation
+            Developer</p>
+          <p>
+            ยกระดับประสิทธิภาพด้าน Supply Chain
+            ด้วยระบบเทคโนโลยีที่ออกแบบเฉพาะ (Customized
+            Systems) และระบบ Automation เพื่อสนับสนุนการตัดสินใจบนพื้นฐานข้อมูล
+            (Data-Driven Decision Making)
+          </p>
+          <a class="btn" href="#contact">Contact Me</a>
         </div>
-        <div class="skill">
-          <h4>Tools & DevOps</h4>
-          <span>Cloud hosting (DigitalOcean)</span>, <span>Cloudflare</span>, <span>Excel VBA</span>,
-          <span>Microsoft Office</span>,
-          <span>Git</span>, <span>Automation Scripts</span>
+        <div class="portrait-card">
+          <img class="portrait" src="images/profile.jpg"
+            alt="Natthawut (Jimmy) - Profile Picture"
+            oncontextmenu="return false;" draggable="false" />
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section" id="experience">
-      <h2 class="section-title">Experience</h2>
-      <div class="divider"></div>
-      <div class="experience-item">
-        <div class="exp-header">
-          <div style="display: flex; align-items: center; gap: 15px;">
-            <img src="images/baimiang-logo.png" alt="Bright Mind Retail Logo"
-              style="width: 50px; height: 50px; object-fit: contain; border-radius: 8px;" />
-            <div>
-              <h3 style="margin: 0;">Supply Chain Analyst Officer</h3>
-              <span class="exp-date">Sept 2025 - Present</span>
-            </div>
-          </div>
-
-        </div>
-        <p class="exp-company">Bright Mind Retail Co., Ltd.</p>
-        <ul class="about-text"
-          style="padding-left: 20px; list-style-type: disc; display: flex; flex-direction: column; gap: 8px;">
-          <li><strong>Full-Stack Planogram (Web & Mobile):</strong> พัฒนาระบบจัดการ Layout สินค้าบนชั้นวาง (Shelf)
-            ทั่วทุกสาขา โดยมี Admin Dashboard สำหรับวิเคราะห์ยอดขาย เบิกออก และจำนวนสต็อก รวมถึง User Interface
-            ให้พนักงานหน้าร้านเช็คตำแหน่งสินค้าได้แบบ Real-time <br></li>
-          <li><strong>AutoPO & Data Systems:</strong>
-            บริหารและปรับปรุงระบบอัตโนมัติในการรวบรวมข้อมูลจากหลายแหล่งเข้าสู่ศูนย์กลาง (Centralized Database)
-            พร้อมวิเคราะห์แนวโน้มยอดขายและข้อมูลการเบิกสินค้า เพื่อสนับสนุนการคำนวณและออกใบสั่งซื้อ (Purchase Orders:
-            PO) ได้อย่างแม่นยำและเหมาะสม
-          </li>
-          <li><strong>Demand Planning & Reports:</strong> วิเคราะห์ข้อมูลยอดขายในระดับ Branch, Brand และ SKU
-            เพื่อติดตามแนวโน้มสินค้า และบริหารปัญหา Out-of-Stock และ Overstock ให้สต็อกอยู่ในระดับที่เหมาะสม</li>
-          <li><strong>Marketing & IT Operations:</strong> พัฒนา Script สำหรับสร้างรหัสบัตรกำนัล (Voucher Codes) มากกว่า
-            50,000 รายการ เพื่อรองรับแคมเปญการตลาดขนาดใหญ่ได้อย่างมีประสิทธิภาพ</li>
-          <li><strong>Workplace Automation:</strong> ออกแบบและพัฒนาระบบอัตโนมัติสำหรับงานเอกสารและกระบวนการที่ทำซ้ำ
-            (Repetitive Processes) เพื่อลด Human Error และเพิ่มประสิทธิภาพการดำเนินงาน (Operational Efficiency)</li>
-        </ul>
-      </div>
-      <div class="work-grid" style="margin-top: 20px;">
-        <div style="position: relative; width: 100%; aspect-ratio: 4/3; border-radius: 8px; overflow: hidden;">
-          <img src="images/pog-admin.png" alt="POG Role Admin" class="work-thumb-img"
-            style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);" />
-          <div
-            style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: 8px; text-align: center; font-size: 12px;">
-            Role Admin
-          </div>
-        </div>
-        <div style="position: relative; width: 100%; aspect-ratio: 4/3; border-radius: 8px; overflow: hidden;">
-          <img src="images/pog-user.png" alt="POG Role User" class="work-thumb-img"
-            style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);" />
-          <div
-            style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: 8px; text-align: center; font-size: 12px;">
-            Role User
-          </div>
-        </div>
-        <div style="position: relative; width: 100%; aspect-ratio: 4/3; border-radius: 8px; overflow: hidden;">
-          <img src="images/pog-stock.png" alt="POG Data Analysis" class="work-thumb-img"
-            style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);" />
-          <div
-            style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: 8px; text-align: center; font-size: 12px;">
-            Data Analysis
-          </div>
-        </div>
-        <div style="position: relative; width: 100%; aspect-ratio: 4/3; border-radius: 8px; overflow: hidden;">
-          <img src="images/pog-mobile.png" alt="POG Mobile View" class="work-thumb-img"
-            style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);" />
-          <div
-            style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: 8px; text-align: center; font-size: 12px;">
-            Mobile View
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="projects">
-      <h2 class="section-title">Projects</h2>
-      <div class="divider"></div>
-      <div class="project-item">
-        <h3 class="project-title">🌐 NoraStory: Dynamic Storytelling Platform (2026) - Digital Infrastructure + Data
-          Pipeline + Automation System (tech)</h3>
-
-        <ul class="about-text"
-          style="padding-left: 20px; list-style-type: disc; display: flex; flex-direction: column; gap: 8px;">
-          <li><strong>Project Overview:</strong> Automated semi-template web page creation system for E-commerce
-            businesses seeking to impress customers through storytelling. Supports over 800 million unique URL patterns
-            and complete Firebase-integrated backend management system.</li>
-          <li><strong>Dynamic Link System:</strong> Developed a "Dynamic Link" system that generates unique URLs for
-            customers to access personalized web pages.</li>
-          <li><strong>Serverless Backend:</strong> Built a Serverless Architecture using Firebase Cloud Functions to
-            handle orders, payments, and automated workflows.</li>
-          <li><strong>Admin Dashboard:</strong> Implemented Role-based access to manage orders, verify payment slips,
-            and assign templates securely.</li>
-          <li><strong>Custom Domain:</strong> Created a Custom Domain System for customers (e.g.,
-            norastory.com/{customer})
-            using path-based routing with dynamic content generation.</li>
-          <li><strong>Database Management:</strong> Designed a Secure Database in Firestore with strict rules to protect
-            customer data and media files. Managed Multiple Templates that allow admins to change the website's look
-            instantly without redeploying code.</li>
-        </ul>
-
-
-
-        <p class="project-desc" style="margin-top: 15px; margin-bottom: 20px;">
-          <strong>Link:</strong> <a href="https://norastory.com" target="_blank"
-            style="color: var(--text); font-weight: 800; font-size: 15px; background: var(--chip); border: 1px solid var(--line); padding: 6px 12px; border-radius: 8px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; margin-left: 4px; transition: all 0.2s;">🔗
-            https://norastory.com</a>
-        </p>
-
-
-        <div class="project-tech">
-          <span class="tag">React</span>
-          <span class="tag">Firebase (Functions, Firestore)</span>
-        </div>
-        <div class="work-grid" style="margin-top: 20px;">
-          <div style="position: relative; width: 100%; aspect-ratio: 4/3; border-radius: 8px; overflow: hidden;">
-            <img class="work-thumb-img" src="images/nora-home.png" alt="Homepage" oncontextmenu="return false;"
-              draggable="false" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);" />
-            <div
-              style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: 8px; text-align: center; font-size: 12px;">
-              Homepage
-            </div>
-          </div>
-          <div style="position: relative; width: 100%; aspect-ratio: 4/3; border-radius: 8px; overflow: hidden;">
-            <img class="work-thumb-img" src="images/nora-scan.png" alt="Use App" oncontextmenu="return false;"
-              draggable="false" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);" />
-            <div
-              style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: 8px; text-align: center; font-size: 12px;">
-              Use App
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-item">
-        <h3 class="project-title">🛍️ E-Commerce Web Application (2025) - DEMO</h3>
-
-        <ul class="about-text"
-          style="padding-left: 20px; list-style-type: disc; display: flex; flex-direction: column; gap: 8px;">
-          <li><strong>Project Overview:</strong> Developed a full-stack E-commerce system supporting end-to-end
-            operations, including customer purchasing (shopping, cart) and admin management for products, orders, and
-            inventory-related processes</li>
-
-          <li><strong>Security & Authentication:</strong> Implemented secure Token-based Authentication with role
-            separation (Admin/User) to protect user data and ensure controlled system access</li>
-
-          <li><strong>Architecture & Code Organization:</strong> Designed a Feature-based architecture for scalable and
-            maintainable code, enabling easier future enhancements and system expansion</li>
-
-          <li><strong>State Management:</strong> Managed global state using Zustand to efficiently handle shopping
-            carts, user sessions, and real-time updates without impacting application performance</li>
-
-          <li><strong>UI/UX Design:</strong> Developed a responsive UI using Tailwind CSS to ensure seamless user
-            experience across mobile and desktop platforms</li>
-
-          <li><strong>Business & Supply Chain Perspective:</strong> มีความเข้าใจด้าน Database และระบบ E-commerce
-            ควบคู่กับมุมมองเชิงธุรกิจ สามารถมองภาพรวมของ End-to-End Process
-            และเชื่อมโยงข้อมูลเพื่อสนับสนุนการตัดสินใจด้าน Inventory, Order Management และ Supply Chain Operations แบบ
-            Data-Driven</li>
-        </ul>
-
-        <p class="project-desc" style="margin-top: 15px; margin-bottom: 20px;">
-          <strong>Link:</strong> <a href="https://shop.ntwlabs.com" target="_blank"
-            style="color: var(--text); font-weight: 800; font-size: 15px; background: var(--chip); border: 1px solid var(--line); padding: 6px 12px; border-radius: 8px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; margin-left: 4px; transition: all 0.2s;">🔗
-            https://shop.ntwlabs.com</a>
-        </p>
-        <div class="project-tech">
-          <span class="tag">React</span>
-          <span class="tag">Node.js</span>
-          <span class="tag">PostgreSQL</span>
-        </div>
-        <div class="work-grid" style="margin-top: 20px;">
-          <div style="position: relative; width: 100%; aspect-ratio: 4/3; border-radius: 8px; overflow: hidden;">
-            <img class="work-thumb-img" src="images/ecommerce-dashboard.png" alt="E-Commerce Homepage"
-              oncontextmenu="return false;" draggable="false"
-              style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);" />
-            <div
-              style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: 8px; text-align: center; font-size: 12px;">
-              Dashboard
-            </div>
-          </div>
-          <div style="position: relative; width: 100%; aspect-ratio: 4/3; border-radius: 8px; overflow: hidden;">
-            <img class="work-thumb-img" src="images/ecommerce-home.png" alt="E-Commerce Home"
-              oncontextmenu="return false;" draggable="false"
-              style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);" />
-            <div
-              style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: 8px; text-align: center; font-size: 12px;">
-              Home
-            </div>
-          </div>
-          <div style="position: relative; width: 100%; aspect-ratio: 4/3; border-radius: 8px; overflow: hidden;">
-            <img class="work-thumb-img" src="images/ecommerce-shop.png" alt="E-Commerce Shopping"
-              oncontextmenu="return false;" draggable="false"
-              style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);" />
-            <div
-              style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: 8px; text-align: center; font-size: 12px;">
-              Shopping
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-item">
-        <h3 class="project-title">🌫️ Dust Prediction Mobile App (2024)</h3>
-
-        <ul class="about-text"
-          style="padding-left: 20px; list-style-type: disc; display: flex; flex-direction: column; gap: 8px;">
-
-          <li><strong>API Integration:</strong> เชื่อมต่อข้อมูลจาก Open API (Air4Thai) เพื่อดึงข้อมูลคุณภาพอากาศ (PM2.5)
-            แบบ Real-time สำหรับการแสดงผลและวิเคราะห์ข้อมูล</li>
-
-          <li><strong>Machine Learning & Forecasting:</strong> พัฒนาโมเดลคาดการณ์ (Prediction Model) โดยใช้ Deep
-            Learning (RNN, LSTM) และ Machine Learning (Random Forest) เพื่อวิเคราะห์แนวโน้มและพยากรณ์ระดับฝุ่นล่วงหน้า
-            (Forecasting)</li>
-
-          <li><strong>Backend & Data Management:</strong> พัฒนา Web Service API สำหรับจัดเก็บและจัดการข้อมูลในฐานข้อมูล
-            (Database) เพื่อรองรับการใช้งานข้อมูลในระบบอย่างมีประสิทธิภาพ</li>
-
-          <li><strong>Mobile Application (Android):</strong> ออกแบบและพัฒนา Mobile Application พร้อม UX/UI ที่ใช้งานง่าย
-            เพื่อแสดงผลข้อมูลและผลการคาดการณ์ให้ผู้ใช้งานเข้าใจได้อย่างชัดเจน</li>
-
-          <li><strong>Real-time Data Processing:</strong> พัฒนาระบบแสดงผลข้อมูลแบบ Real-time จากฐานข้อมูล
-            เพื่อให้ผู้ใช้งานสามารถติดตามสถานการณ์ได้อย่างต่อเนื่อง</li>
-
-        </ul>
-        <!-- <p class="project-desc" style="margin-top: 5px;">
-          <strong>Link:</strong> <a href="https://com" target="_blank"
-            style="color: inherit; font-weight: bold;">https://com</a>
-        </p> -->
-        <div class="project-tech">
-          <span class="tag">Flutter</span>
-          <span class="tag">Python</span>
-          <span class="tag">Node.js</span>
-          <span class="tag">MySQL</span>
-        </div>
-        <div class="work-grid" style="margin-top: 20px;">
-          <div style="position: relative; width: 100%; aspect-ratio: 4/3; border-radius: 8px; overflow: hidden;">
-            <img class="work-thumb-img" src="images/dust-app-main.png" alt="Dust Prediction App Main Screen"
-              oncontextmenu="return false;" draggable="false"
-              style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);" />
-            <div
-              style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: 8px; text-align: center; font-size: 12px;">
-              Mobile App
-            </div>
-          </div>
-          <div style="position: relative; width: 100%; aspect-ratio: 4/3; border-radius: 8px; overflow: hidden;">
-            <img class="work-thumb-img" src="images/dust-app-api.png" alt="Flow diagram" oncontextmenu="return false;"
-              draggable="false" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);" />
-            <div
-              style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: 8px; text-align: center; font-size: 12px;">
-              Flow diagram
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="education">
-      <h2 class="section-title">Education</h2>
-      <div class="divider"></div>
-      <div class="edu-item">
-        <h3>Silpakorn University</h3>
+      <section class="section" id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="divider"></div>
         <p class="about-text">
-          Bachelor of Science in Computer Science | 2020 - 2024<br>
-          <strong>Certificate:</strong> Deputy Head of Student Affairs, Computer Department Student Committee
-        </p>
-      </div>
-    </section>
+          จบการศึกษาด้าน Computer Science และมีความสนใจในด้าน Supply Chain
+          Management (SCM)
+          ผมเป็นผู้ที่มีความกระตือรือร้น (Self-driven) และสามารถเชื่อมโยงระหว่าง
+          Data Logic กับการดำเนินงานด้าน Supply
+          Chain ได้อย่างมีประสิทธิภาพ โดยผสานความถนัดด้านตัวเลขเข้ากับทักษะ
+          Development Programming และ Automation
+          เพื่อพัฒนาโซลูชันที่ช่วยเปลี่ยนงาน Manual
+          ให้เป็นกระบวนการที่มีประสิทธิภาพและมีความแม่นยำสูง (High-Accuracy
+          Workflows) เป็นผู้เรียนรู้เร็ว (Fast Learner)
+          และมุ่งมั่นเติบโตในสายงาน SCM ในระยะยาว พร้อมตั้งเป้าใช้
+          Advanced Analytics และเทคโนโลยี</p>
+      </section>
 
-    <section class="section" id="soft-skills">
-      <h2 class="section-title">Soft Skills</h2>
-      <div class="divider"></div>
-
-      <ul class="about-text"
-        style="padding-left: 20px; list-style-type: disc; display: flex; flex-direction: column; gap: 8px;">
-
-        <li><strong>AI-Enhanced Productivity:</strong> ใช้เครื่องมือ AI และ Modern Development Tools
-          เพื่อเพิ่มความเร็วในการทำงาน (Productivity) และแก้ไขปัญหาเชิงเทคนิคได้อย่างมีประสิทธิภาพ</li>
-
-        <li><strong>Business & Process Improvement:</strong> มีทักษะในการวิเคราะห์และปรับปรุงกระบวนการทำงาน (Process
-          Improvement) โดยเปลี่ยนงาน Manual ให้เป็นระบบอัตโนมัติ (Automation) เพื่อลด Human Error
-          และเพิ่มประสิทธิภาพของทีม</li>
-
-        <li><strong>Cross-functional Collaboration:</strong> สามารถทำงานร่วมกับทีมที่หลากหลาย (เช่น Business, Operation,
-          IT) และอธิบายเรื่องเทคนิคให้เข้าใจง่าย เพื่อให้การทำงานสอดคล้องกัน</li>
-
-        <li><strong>Fast Learner & Adaptability:</strong> เรียนรู้งานใหม่ได้รวดเร็ว
-          ปรับตัวเข้ากับสภาพแวดล้อมการทำงานได้ดี และสามารถส่งมอบงานได้ตามเป้าหมาย (On-time Delivery)</li>
-
-        <li><strong>Data-Driven Mindset:</strong> มีแนวคิดในการใช้ข้อมูล (Data-Driven)
-          เพื่อวิเคราะห์ปัญหาและสนับสนุนการตัดสินใจในงานด้านธุรกิจและ Supply Chain</li>
-
-      </ul>
-    </section>
-
-    <section class="section" id="contact">
-      <h2 class="section-title">Contact</h2>
-      <div class="divider"></div>
-      <div class="contact-grid">
-        <p class="contact-note">
-
-        </p>
-        <div class="contact-card">
-          <div class="contact-item">
-            <span class="contact-label">Email</span>
-            <span class="contact-value">ntwjim.work@gmail.com</span>
+      <section class="section" id="skills">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="divider"></div>
+        <div class="skills">
+          <div class="skill">
+            <h4>Core Tech</h4>
+            <span>Node.js</span>, <span>React + Vite</span>,
+            <span>Prisma ORM</span>, <span>PostgreSQL</span>,
+            <span>Python</span>, <span>SQL</span>
           </div>
-          <div class="contact-item">
-            <span class="contact-label">Phone</span>
-            <span class="contact-value">094-870-1182</span>
+          <div class="skill">
+            <h4>Supply Chain & Data</h4>
+            <span>Demand Planning</span>, <span>Auto-ordering
+              systems</span>, <span>Managing product lists
+              (SKUs)</span>, <span>Advanced Excel</span>,
+            <span>Data Visualization</span>, <span>Inventory Optimization</span>
           </div>
-          <div class="contact-item">
-            <span class="contact-label">Location</span>
-            <span class="contact-value">Bang Kraso, Mueang Nonthaburi, 11000</span>
+          <div class="skill">
+            <h4>Modern Workflow</h4>
+            <span>Fast Learning</span>,
+            <span>Prompt engineering for technical
+              solutions</span>
           </div>
-          <div class="contact-item">
-            <span class="contact-label">Website</span>
-            <a class="contact-value contact-link" href="https://ntwlabs.com" target="_blank">ntwlabs.com</a>
+          <div class="skill">
+            <h4>Tools & DevOps</h4>
+            <span>Cloud hosting</span>, <span>Code Development</span>,
+            <span>Excel VBA</span>,
+            <span>Microsoft Office</span>,
+            <span>Git</span>, <span>Automation Scripts</span>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <footer class="footer">
-      <div class="brand">© 2026 Natthawut T.</div>
-      <!-- <div class="footer-icons">
-        <a class="icon-btn" href="https://github.com/jimjaja" target="_blank" aria-label="GitHub">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path
-              d="M12 2a10 10 0 0 0-3.16 19.49c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.19-3.37-1.19-.45-1.17-1.1-1.48-1.1-1.48-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.9 1.56 2.37 1.1 2.95.85.1-.67.35-1.1.64-1.36-2.22-.25-4.56-1.12-4.56-5a3.9 3.9 0 0 1 1.03-2.7 3.6 3.6 0 0 1 .1-2.66s.85-.27 2.8 1.03a9.6 9.6 0 0 1 5.1 0c1.95-1.3 2.8-1.03 2.8-1.03.38.9.36 2 .1 2.66a3.9 3.9 0 0 1 1.03 2.7c0 3.9-2.35 4.75-4.58 5 .36.31.69.92.69 1.85v2.75c0 .26.18.59.69.48A10 10 0 0 0 12 2z" />
-          </svg>
-        </a>
-      </div> -->
-    </footer>
-  </div>
-  <script>
+      <section class="section" id="experience">
+        <h2 class="section-title">Experience</h2>
+        <div class="divider"></div>
+        <div class="experience-item">
+
+          <div class="experience-item experience-item-secondary">
+            <div class="exp-header">
+              <div style="display: flex; align-items: center; gap: 15px;">
+                <img src="images/withit-log.png" alt=""
+                  style="width: 50px; height: 50px; object-fit: contain; border-radius: 8px;" />
+                <div>
+                  <h3 style="margin: 0;">Demand Planning</h3>
+                  <span class="exp-date">July 2026 - Present</span>
+                </div>
+              </div>
+            </div>
+            <!-- <p class="exp-company">Withit Group Co., Ltd.</p> -->
+            <!-- <ul class="about-text"
+              style="padding-left: 20px; list-style-type: disc; display: flex; flex-direction: column; gap: 8px;">
+              <li><strong>:</strong>
+              </li>
+            </ul> -->
+          </div>
+          <div class="experience-separator ">
+          </div>
+          <div class="exp-header">
+            <div style="display: flex; align-items: center; gap: 15px;">
+              <img src="images/baimiang-logo.png" alt="Bright Mind Retail Logo"
+                style="width: 50px; height: 50px; object-fit: contain; border-radius: 8px;" />
+              <div>
+                <h3 style="margin: 0;">Supply Chain Analyst Officer</h3>
+                <span class="exp-date">Sept 2025 - June 2026 · 10 Month</span>
+              </div>
+            </div>
+
+          </div>
+          <p class="exp-company">Bright Mind Retail Co., Ltd.</p>
+          <ul class="about-text"
+            style="padding-left: 20px; list-style-type: disc; display: flex; flex-direction: column; gap: 8px;">
+            <!-- ข้อ 1: ชูโรงเรื่อง Demand & Inventory ชัดๆ -->
+            <li><strong>Demand Planning & Inventory Optimization:</strong>
+              วิเคราะห์ข้อมูลยอดขายเชิงลึกระดับ Branch, Brand และ SKU
+              เพื่อพยากรณ์แนวโน้มความต้องการสินค้า (Demand Forecasting)
+              พร้อมบริหารจัดการปัญหา Out-of-Stock และ Overstock
+              เพื่อรักษาปริมาณสินค้าคงคลังให้อยู่ในระดับที่เหมาะสมที่สุด
+            </li>
+
+            <!-- ข้อ 2: เชื่อมโยง Data เข้ากับระบบอัตโนมัติ -->
+            <li><strong>AutoPO & Centralized Data Systems:</strong>
+              ออกแบบและพัฒนาระบบอัตโนมัติในการรวบรวมข้อมูลจากหลากหลายแหล่งเข้าสู่
+              Centralized Database
+              เพื่อวิเคราะห์แนวโน้มยอดขายและข้อมูลการเบิกสินค้า
+              ช่วยสนับสนุนการคำนวณและออกใบสั่งซื้อ (Purchase Orders: PO)
+              ได้อย่างแม่นยำ
+            </li>
+
+            <!-- ข้อ 3: โชว์ของเรื่องระบบที่สร้างอิมแพคกับหน้าร้าน -->
+            <li><strong>Full-Stack Planogram System (Web & Mobile):</strong>
+              พัฒนาระบบจัดการ Layout สินค้าบนชั้นวาง (Shelf) ทั่วทุกสาขา พร้อม
+              Admin Dashboard สำหรับวิเคราะห์ยอดขายและสถานะสต็อกแบบ Real-time
+              ช่วยให้พนักงานหน้าร้านเช็คตำแหน่งสินค้าได้อย่างถูกต้องและลดความผิดพลาดในการจัดวาง
+            </li>
+
+            <!-- ข้อ 4: มัดรวมงาน Automation ให้ดูเป็นระบบ ไม่เลอะเทอะ -->
+            <li><strong>Workplace Automation & Operations Tech:</strong>
+              ประยุกต์ใช้ทักษะการเขียนโปรแกรม เพื่อพัฒนา
+              Automation Scripts สำหรับปรับปรุงกระบวนการทำงานที่ซ้ำซ้อน
+              (Repetitive Processes)
+              เช่น การพัฒนาระบบสร้างรหัสบัตรกำนัล (Voucher Codes) มากกว่า 50,000
+              รายการ เพื่อรองรับแคมเปญการตลาด
+              ช่วยลด Human Error และเพิ่มประสิทธิภาพการดำเนินงาน (Operational
+              Efficiency) ขององค์กร
+            </li>
+          </ul>
+        </div>
+        <div class="work-grid" style="margin-top: 20px;">
+          <div
+            style="position: relative; width: 100%; aspect-ratio: 4/3; border-radius: 8px; overflow: hidden;">
+            <img src="images/pog-admin.png" alt="POG Role Admin"
+              class="work-thumb-img"
+              style="background: linear-gradient(135deg, var(--panel-2) 0%, var(--line) 100%);" />
+            <div
+              style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: 8px; text-align: center; font-size: 12px;">
+              Web Planogram Admin
+            </div>
+          </div>
+          <div
+            style="position: relative; width: 100%; aspect-ratio: 4/3; border-radius: 8px; overflow: hidden;">
+            <img src="images/pog-user.png" alt="POG Role User"
+              class="work-thumb-img"
+              style="background: linear-gradient(135deg, var(--panel-2) 0%, var(--line) 100%);" />
+            <div
+              style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: 8px; text-align: center; font-size: 12px;">
+              Web Planogram User
+            </div>
+          </div>
+          <div
+            style="position: relative; width: 100%; aspect-ratio: 4/3; border-radius: 8px; overflow: hidden;">
+            <img src="images/pog-stock.png" alt="POG Data Analysis"
+              class="work-thumb-img"
+              style="background: linear-gradient(135deg, var(--panel-2) 0%, var(--line) 100%);" />
+            <div
+              style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: 8px; text-align: center; font-size: 12px;">
+              Data Analysis
+            </div>
+          </div>
+          <div
+            style="position: relative; width: 100%; aspect-ratio: 4/3; border-radius: 8px; overflow: hidden;">
+            <img src="images/pog-mobile.png" alt="POG Mobile View"
+              class="work-thumb-img"
+              style="background: linear-gradient(135deg, var(--panel-2) 0%, var(--line) 100%);" />
+            <div
+              style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: 8px; text-align: center; font-size: 12px;">
+              Mobile View
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="section" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="divider"></div>
+        <div class="project-item">
+          <h3 class="project-title">🤖 Automation Script & Centralized Report
+            System (2026)</h3>
+
+          <ul class="about-text"
+            style="padding-left: 20px; list-style-type: disc; display: flex; flex-direction: column; gap: 8px;">
+            <li><strong>Project Overview:</strong> พัฒนาระบบ Automation Script
+              สำหรับรวบรวมข้อมูลจากหลายแหล่งให้อยู่ในศูนย์กลางเดียว
+              เพื่อลดงานซ้ำและช่วยให้ข้อมูลพร้อมใช้งานสำหรับการวิเคราะห์</li>
+            <li><strong>Data Consolidation:</strong> ออกแบบขั้นตอนการรวมข้อมูล
+              ตรวจสอบความถูกต้อง
+              และจัดรูปแบบข้อมูลให้เหมาะสมก่อนนำไปใช้งานต่อ</li>
+            <li><strong>Automated Reporting:</strong>
+              ดึงข้อมูลจากแหล่งกลางออกมาเป็น Report
+              เพื่อสนับสนุนการติดตามผลและการตัดสินใจ</li>
+          </ul>
+
+          <div class="project-tech">
+            <span class="tag">Automation Script</span>
+            <span class="tag">Data Consolidation</span>
+            <span class="tag">Reporting</span>
+          </div>
+
+          <div class="work-grid project-media-grid">
+            <div class="project-shot">
+              <img class="work-thumb-img placeholder-thumb"
+                src="images/MatrixMix.png"
+                alt="Automation Centralized Data" oncontextmenu="return false;"
+                draggable="false" />
+              <div class="project-shot-caption">
+                Centralized Data
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <h3 class="project-title">🎁 CRM Employee Reward System (2026)</h3>
+
+          <ul class="about-text"
+            style="padding-left: 20px; list-style-type: disc; display: flex; flex-direction: column; gap: 8px;">
+            <li><strong>Project Overview:</strong> พัฒนาระบบ CRM
+              สำหรับรีวอร์ดพนักงาน
+              โดยผู้ใช้งานสามารถสะสมแต้มจากการทำกิจกรรมที่กำหนดไว้</li>
+            <li><strong>Reward Redemption:</strong> เมื่อแต้มครบตามเงื่อนไข
+              พนักงานสามารถนำแต้มไปแลกรางวัลได้ตามสิทธิ์และประเภทรีวอร์ดที่กำหนด</li>
+            <li><strong>Admin & Audit Log:</strong>
+              มีระบบหลังบ้านสำหรับแอดมินในการตรวจสอบข้อมูล หลักฐาน
+              รายการแลกของรางวัล และ Log การทำรายการเพื่อความโปร่งใส</li>
+          </ul>
+
+          <div class="project-tech">
+            <span class="tag">Customer Relationship Management(CRM)</span>
+            <span class="tag">Reward System</span>
+            <span class="tag">Admin Dashboard</span>
+            <span class="tag">Audit Log</span>
+          </div>
+
+          <div class="work-grid project-media-grid">
+            <div class="project-shot">
+              <img class="work-thumb-img placeholder-thumb"
+                src="images/hq-user.jpg"
+                alt="CRM Reward User" oncontextmenu="return false;"
+                draggable="false" />
+              <div class="project-shot-caption">
+                Reward System
+              </div>
+            </div>
+            <div class="project-shot">
+              <img class="work-thumb-img placeholder-thumb"
+                src="images/hq-admin.jpg"
+                alt="CRM Reward Admin" oncontextmenu="return false;"
+                draggable="false" />
+              <div class="project-shot-caption">
+                Admin Control Panel
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <h3 class="project-title">🌐 NoraStory: Dynamic Storytelling Platform
+            (2026) - (Software Development Portfolio)</h3>
+
+          <ul class="about-text"
+            style="padding-left: 20px; list-style-type: disc; display: flex; flex-direction: column; gap: 8px;">
+            <li><strong>Project Overview:</strong> Automated semi-template web
+              page creation system for E-commerce
+              businesses seeking to impress customers through storytelling.
+              Supports over 800 million unique URL patterns
+              and complete Firebase-integrated backend management system.</li>
+            <li><strong>Dynamic Link System:</strong> Developed a "Dynamic Link"
+              system that generates unique URLs for
+              customers to access personalized web pages.</li>
+            <li><strong>Serverless Backend:</strong> Built a Serverless
+              Architecture using Firebase Cloud Functions to
+              handle orders, payments, and automated workflows.</li>
+            <li><strong>Admin Dashboard:</strong> Implemented Role-based access
+              to manage orders, verify payment slips,
+              and assign templates securely.</li>
+            <li><strong>Custom Domain:</strong> Created a Custom Domain System
+              for customers (e.g.,
+              norastory.com/{customer})
+              using path-based routing with dynamic content generation.</li>
+            <li><strong>Database Management:</strong> Designed a Secure Database
+              in Firestore with strict rules to protect
+              customer data and media files. Managed Multiple Templates that
+              allow admins to change the website's look
+              instantly without redeploying code.</li>
+          </ul>
+
+          <p class="project-desc"
+            style="margin-top: 15px; margin-bottom: 20px;">
+            <strong>Link:</strong> <a href="https://norastory.com"
+              target="_blank"
+              style="color: var(--text); font-weight: 800; font-size: 15px; background: var(--chip); border: 1px solid var(--line); padding: 6px 12px; border-radius: 8px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; margin-left: 4px; transition: all 0.2s;">🔗
+              https://norastory.com</a>
+          </p>
+
+          <div class="project-tech">
+            <span class="tag">React</span>
+            <span class="tag">Firebase (Functions, Firestore)</span>
+          </div>
+          <div class="work-grid" style="margin-top: 20px;">
+            <div
+              style="position: relative; width: 100%; aspect-ratio: 4/3; border-radius: 8px; overflow: hidden;">
+              <img class="work-thumb-img" src="images/nora-home.png"
+                alt="Homepage" oncontextmenu="return false;"
+                draggable="false"
+                style="background: linear-gradient(135deg, var(--panel-2) 0%, var(--line) 100%);" />
+              <div
+                style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: 8px; text-align: center; font-size: 12px;">
+                Homepage
+              </div>
+            </div>
+            <div
+              style="position: relative; width: 100%; aspect-ratio: 4/3; border-radius: 8px; overflow: hidden;">
+              <img class="work-thumb-img" src="images/nora-scan.png"
+                alt="Use App" oncontextmenu="return false;"
+                draggable="false"
+                style="background: linear-gradient(135deg, var(--panel-2) 0%, var(--line) 100%);" />
+              <div
+                style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: 8px; text-align: center; font-size: 12px;">
+                Use App
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <h3 class="project-title">🛍️ E-Commerce Web Application (2025) -
+            DEMO (Software Development Portfolio)</h3>
+
+          <ul class="about-text"
+            style="padding-left: 20px; list-style-type: disc; display: flex; flex-direction: column; gap: 8px;">
+            <li><strong>Project Overview:</strong> Developed a full-stack
+              E-commerce system supporting end-to-end
+              operations, including customer purchasing (shopping, cart) and
+              admin management for products, orders, and
+              inventory-related processes</li>
+
+            <li><strong>Security & Authentication:</strong> Implemented secure
+              Token-based Authentication with role
+              separation (Admin/User) to protect user data and ensure controlled
+              system access</li>
+
+            <li><strong>Architecture & Code Organization:</strong> Designed a
+              Feature-based architecture for scalable and
+              maintainable code, enabling easier future enhancements and system
+              expansion</li>
+
+            <li><strong>State Management:</strong> Managed global state using
+              Zustand to efficiently handle shopping
+              carts, user sessions, and real-time updates without impacting
+              application performance</li>
+
+            <li><strong>UI/UX Design:</strong> Developed a responsive UI using
+              Tailwind CSS to ensure seamless user
+              experience across mobile and desktop platforms</li>
+
+            <li><strong>Business & Supply Chain Perspective:</strong>
+              เข้าใจด้าน Database และระบบ E-commerce
+              ควบคู่กับมุมมองเชิงธุรกิจ สามารถมองภาพรวมของ End-to-End Process
+              และเชื่อมโยงข้อมูลเพื่อสนับสนุนการตัดสินใจด้าน Inventory, Order
+              Management และ Supply Chain Operations แบบ
+              Data-Driven</li>
+          </ul>
+
+          <p class="project-desc"
+            style="margin-top: 15px; margin-bottom: 20px;">
+            <strong>Link:</strong> <a href="https://shop.ntwlabs.com"
+              target="_blank"
+              style="color: var(--text); font-weight: 800; font-size: 15px; background: var(--chip); border: 1px solid var(--line); padding: 6px 12px; border-radius: 8px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; margin-left: 4px; transition: all 0.2s;">🔗
+              https://shop.ntwlabs.com</a>
+          </p>
+          <div class="project-tech">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">PostgreSQL</span>
+          </div>
+          <div class="work-grid" style="margin-top: 20px;">
+            <div
+              style="position: relative; width: 100%; aspect-ratio: 4/3; border-radius: 8px; overflow: hidden;">
+              <img class="work-thumb-img" src="images/ecommerce-dashboard.png"
+                alt="E-Commerce Homepage"
+                oncontextmenu="return false;" draggable="false"
+                style="background: linear-gradient(135deg, var(--panel-2) 0%, var(--line) 100%);" />
+              <div
+                style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: 8px; text-align: center; font-size: 12px;">
+                Dashboard
+              </div>
+            </div>
+            <div
+              style="position: relative; width: 100%; aspect-ratio: 4/3; border-radius: 8px; overflow: hidden;">
+              <img class="work-thumb-img" src="images/ecommerce-home.png"
+                alt="E-Commerce Home"
+                oncontextmenu="return false;" draggable="false"
+                style="background: linear-gradient(135deg, var(--panel-2) 0%, var(--line) 100%);" />
+              <div
+                style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: 8px; text-align: center; font-size: 12px;">
+                Home
+              </div>
+            </div>
+            <div
+              style="position: relative; width: 100%; aspect-ratio: 4/3; border-radius: 8px; overflow: hidden;">
+              <img class="work-thumb-img" src="images/ecommerce-shop.png"
+                alt="E-Commerce Shopping"
+                oncontextmenu="return false;" draggable="false"
+                style="background: linear-gradient(135deg, var(--panel-2) 0%, var(--line) 100%);" />
+              <div
+                style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: 8px; text-align: center; font-size: 12px;">
+                Shopping
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <h3 class="project-title">🌫️ Dust Prediction Mobile App (2024)</h3>
+
+          <ul class="about-text"
+            style="padding-left: 20px; list-style-type: disc; display: flex; flex-direction: column; gap: 8px;">
+
+            <li><strong>API Integration:</strong> เชื่อมต่อข้อมูลจาก Open API
+              (Air4Thai) เพื่อดึงข้อมูลคุณภาพอากาศ (PM2.5)
+              แบบ Real-time สำหรับการแสดงผลและวิเคราะห์ข้อมูล</li>
+
+            <li><strong>Machine Learning & Forecasting:</strong>
+              พัฒนาโมเดลคาดการณ์ (Prediction Model) โดยใช้ Deep
+              Learning (RNN, LSTM) และ Machine Learning (Random Forest)
+              เพื่อวิเคราะห์แนวโน้มและพยากรณ์ระดับฝุ่นล่วงหน้า
+              (Forecasting)</li>
+
+            <li><strong>Backend & Data Management:</strong> พัฒนา Web Service
+              API สำหรับจัดเก็บและจัดการข้อมูลในฐานข้อมูล
+              (Database) เพื่อรองรับการใช้งานข้อมูลในระบบอย่างมีประสิทธิภาพ</li>
+
+            <li><strong>Mobile Application (Android):</strong> ออกแบบและพัฒนา
+              Mobile Application พร้อม UX/UI ที่ใช้งานง่าย
+              เพื่อแสดงผลข้อมูลและผลการคาดการณ์ให้ผู้ใช้งานเข้าใจได้อย่างชัดเจน</li>
+
+            <li><strong>Real-time Data Processing:</strong>
+              พัฒนาระบบแสดงผลข้อมูลแบบ Real-time จากฐานข้อมูล
+              เพื่อให้ผู้ใช้งานสามารถติดตามสถานการณ์ได้อย่างต่อเนื่อง</li>
+
+          </ul>
+          <div class="project-tech">
+            <span class="tag">Flutter</span>
+            <span class="tag">Python</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">MySQL</span>
+          </div>
+          <div class="work-grid" style="margin-top: 20px;">
+            <div
+              style="position: relative; width: 100%; aspect-ratio: 4/3; border-radius: 8px; overflow: hidden;">
+              <img class="work-thumb-img placeholder-thumb"
+                src="images/dust-app-main.png"
+                alt="Dust Prediction App Main Screen"
+                oncontextmenu="return false;" draggable="false" />
+              <div
+                style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: 8px; text-align: center; font-size: 12px;">
+                Mobile App
+              </div>
+            </div>
+            <div
+              style="position: relative; width: 100%; aspect-ratio: 4/3; border-radius: 8px; overflow: hidden;">
+              <img class="work-thumb-img placeholder-thumb"
+                src="images/dust-app-api.png"
+                alt="Flow diagram" oncontextmenu="return false;"
+                draggable="false" />
+              <div
+                style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: 8px; text-align: center; font-size: 12px;">
+                Flow diagram
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="education">
+        <h2 class="section-title">Education</h2>
+        <div class="divider"></div>
+        <div class="edu-item">
+          <h3>Silpakorn University</h3>
+          <p class="about-text">
+            Bachelor of Science in Computer Science | 2020 - 2024<br>
+            <strong>Certificate:</strong> Deputy Head of Student Affairs,
+            Computer Department Student Committee
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="soft-skills">
+        <h2 class="section-title">Soft Skills</h2>
+        <div class="divider"></div>
+
+        <ul class="about-text"
+          style="padding-left: 20px; list-style-type: disc; display: flex; flex-direction: column; gap: 8px;">
+
+          <li><strong>AI-Enhanced Productivity:</strong> ใช้เครื่องมือ AI และ
+            Modern Development Tools
+            เพื่อเพิ่มความเร็วในการทำงาน (Productivity)
+            และแก้ไขปัญหาเชิงเทคนิคได้อย่างมีประสิทธิภาพ</li>
+
+          <li><strong>Business & Process Improvement:</strong>
+            มีทักษะในการวิเคราะห์และปรับปรุงกระบวนการทำงาน (Process
+            Improvement) โดยเปลี่ยนงาน Manual ให้เป็นระบบอัตโนมัติ (Automation)
+            เพื่อลด Human Error
+            และเพิ่มประสิทธิภาพของทีม</li>
+
+          <li><strong>Cross-functional Collaboration:</strong>
+            สามารถทำงานร่วมกับทีมที่หลากหลาย (เช่น Business, Operation,
+            IT) และอธิบายเรื่องเทคนิคให้เข้าใจง่าย
+            เพื่อให้การทำงานสอดคล้องกัน</li>
+
+          <li><strong>Fast Learner & Adaptability:</strong>
+            เรียนรู้งานใหม่ได้รวดเร็ว
+            ปรับตัวเข้ากับสภาพแวดล้อมการทำงานได้ดี
+            และสามารถส่งมอบงานได้ตามเป้าหมาย (On-time Delivery)</li>
+
+          <li><strong>Data-Driven Mindset:</strong> มีแนวคิดในการใช้ข้อมูล
+            (Data-Driven)
+            เพื่อวิเคราะห์ปัญหาและสนับสนุนการตัดสินใจในงานด้านธุรกิจและ Supply
+            Chain</li>
+
+        </ul>
+      </section>
+
+      <section class="section" id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="divider"></div>
+        <div class="contact-grid">
+          <p class="contact-note">
+
+          </p>
+          <div class="contact-card">
+            <div class="contact-item">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">ntwjim.work@gmail.com</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Phone</span>
+              <span class="contact-value">094-870-1182</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Location</span>
+              <span class="contact-value">Bang Kraso, Mueang Nonthaburi,
+                11000</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Website</span>
+              <a class="contact-value contact-link" href="https://ntwlabs.com"
+                target="_blank">ntwlabs.com</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="brand">© 2026 Natthawut T.</div>
+      </footer>
+    </div>
+    <script>
     const toggle = document.querySelector(".theme-toggle");
     toggle.addEventListener("click", () => {
       const body = document.body;
       body.dataset.theme = body.dataset.theme === "dark" ? "light" : "dark";
     });
   </script>
-</body>
+  </body>
 
 </html>

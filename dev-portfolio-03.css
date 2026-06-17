@@ -1,31 +1,32 @@
 :root {
-  --bg: #f5f4f2;
-  --bg-spot: #e6e2dc;
-  --panel: #ffffff;
-  --panel-2: #f0eeea;
-  --text: #1b1a19;
-  --muted: #5c5854;
-  --accent: #2f2d2a;
-  --accent-2: #6b655f;
-  --line: #d7d2cb;
-  --chip: #f3f1ee;
-  --btn-bg: #1b1a19;
-  --btn-text: #f5f4f2;
+  --bg: #f8f4ec;
+  --bg-spot: #e8eee2;
+  --panel: #fffdf8;
+  --panel-2: #f0eadf;
+  --text: #26231f;
+  --muted: #6d675e;
+  --accent: #52634a;
+  --accent-2: #7a875e;
+  --line: #ddd4c6;
+  --chip: #f2ecdf;
+  --btn-bg: #52634a;
+  --btn-text: #fffdf8;
+  --font-main: "Segoe UI", "Noto Sans Thai", "Tahoma", "Arial", sans-serif;
 }
 
 body[data-theme="dark"] {
-  --bg: #1f1c1d;
-  --bg-spot: #3b3436;
-  --panel: #2a2728;
-  --panel-2: #1a1819;
-  --text: #f3f1f2;
-  --muted: #b1aeb0;
-  --accent: #d4d1cc;
-  --accent-2: #9a948e;
-  --line: #4a4446;
-  --chip: #2f2a2c;
-  --btn-bg: #f3f1f2;
-  --btn-text: #1f1c1d;
+  --bg: #201f1b;
+  --bg-spot: #34392d;
+  --panel: #292720;
+  --panel-2: #353227;
+  --text: #f5efe3;
+  --muted: #c0b8a9;
+  --accent: #c7d1aa;
+  --accent-2: #aeb98e;
+  --line: #4c473b;
+  --chip: #332f27;
+  --btn-bg: #c7d1aa;
+  --btn-text: #201f1b;
 }
 
 * {
@@ -36,8 +37,8 @@ body {
   margin: 0;
   background: radial-gradient(1200px 900px at 70% -20%, var(--bg-spot) 0%, var(--bg) 55%) fixed;
   color: var(--text);
-  font-family: "Trebuchet MS", "Gill Sans", "Calibri", sans-serif;
-  letter-spacing: 0.2px;
+  font-family: var(--font-main);
+  letter-spacing: 0;
   min-height: 100vh;
 }
 
@@ -65,7 +66,7 @@ a {
 .brand {
   font-weight: 700;
   font-size: 16px;
-  letter-spacing: 0.6px;
+  letter-spacing: 0;
 }
 
 .nav-links {
@@ -175,7 +176,7 @@ a {
   background: transparent;
   color: var(--text);
   font-size: 12px;
-  letter-spacing: 0.8px;
+  letter-spacing: 0;
   text-transform: uppercase;
 }
 
@@ -226,7 +227,7 @@ a {
   margin: 8px 0 14px;
   font-size: 14px;
   text-transform: uppercase;
-  letter-spacing: 1.2px;
+  letter-spacing: 0;
   color: var(--muted);
 }
 
@@ -346,6 +347,49 @@ a {
   display: block;
 }
 
+.project-media-grid {
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 20px;
+}
+
+.project-shot {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  overflow: hidden;
+}
+
+.project-shot .work-thumb-img {
+  height: 100%;
+  aspect-ratio: auto;
+  object-fit: contain;
+  background: var(--panel-2);
+  border: 0;
+}
+
+.project-shot-caption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.72);
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.placeholder-thumb {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0) 48%),
+    linear-gradient(135deg, var(--panel-2) 0%, var(--line) 100%);
+  border: 1px solid var(--line);
+}
+
 .work-thumb-inner {
   width: 80%;
   height: 100%;
@@ -373,7 +417,7 @@ a {
   margin: 0 0 6px;
   font-size: 14px;
   text-transform: uppercase;
-  letter-spacing: 0.8px;
+  letter-spacing: 0;
 }
 
 .work-meta {
@@ -433,7 +477,7 @@ a {
 .contact-label {
   color: var(--muted);
   font-size: 12px;
-  letter-spacing: 0.8px;
+  letter-spacing: 0;
   text-transform: uppercase;
 }
 
@@ -467,6 +511,38 @@ a {
 /* Experience */
 .experience-item {
   margin-bottom: 24px;
+}
+
+.experience-item-secondary {
+  margin-top: 18px;
+  padding: 20px 0 0;
+  position: relative;
+}
+
+.experience-separator {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 32px 0;
+}
+
+.experience-separator::before,
+.experience-separator::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
+
+.experience-separator span {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--accent-2);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0;
+  padding: 5px 10px;
+  white-space: nowrap;
 }
 
 .exp-header {
@@ -565,6 +641,10 @@ a {
     grid-template-columns: repeat(2, 1fr) !important;
   }
 
+  .project-media-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
   .contact-grid {
     grid-template-columns: 1fr;
   }
@@ -578,6 +658,10 @@ a {
   .work-grid {
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 10px !important;
+  }
+
+  .project-media-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
   }
 
   .nav {
